@@ -51,6 +51,11 @@
     "webhook": "./packages/cli/bin/n8n webhook",
     "worker": "./packages/cli/bin/n8n worker"
   },
+  "dependencies": {
+    "remotion": "4.0.445",
+    "@remotion/cli": "4.0.445",
+    "@remotion/player": "4.0.445"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.26.0",
     "@biomejs/biome": "^1.9.0",

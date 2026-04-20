@@ -1,0 +1,22 @@
+{
+  "name": "novahub-carousel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:video": "remotion render src/index.ts NovahubCarousel out/carousel.mp4",
+    "render:gif": "remotion render src/index.ts NovahubCarousel out/carousel.gif",
+    "render:slides": "remotion still src/index.ts NovahubCarousel --frame=0 out/slide-1.png && remotion still src/index.ts NovahubCarousel --frame=90 out/slide-2.png && remotion still src/index.ts NovahubCarousel --frame=180 out/slide-3.png && remotion still src/index.ts NovahubCarousel --frame=270 out/slide-4.png && remotion still src/index.ts NovahubCarousel --frame=360 out/slide-5.png"
+  },
+  "dependencies": {
+    "remotion": "4.0.445",
+    "@remotion/cli": "4.0.445",
+    "@remotion/player": "4.0.445",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.5.0"
+  }
+}
